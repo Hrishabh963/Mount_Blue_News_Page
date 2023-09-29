@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>News Page</title>
+    <title>Document</title>
 </head>
 <link rel="stylesheet" href="style.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,26 +16,31 @@
         <div class="logo">
             <img src="/assets/images/logo.svg" alt="logo">
         </div>
-        <div class="navbar">
-            <span>Home</span > <span>New</span> <span>Popular</span> <span>Trending</span> <span>Categories</span>
-        </div>
+        <nav class="navbar">
+            <div class="hamburger"><img src="/assets/images/icon-menu.svg" alt="open"></div>
+            <span class="navbar_items">Home </span><span class="navbar_items">News</span><span class="navbar_items">Popular</span><span class="navbar_items">Trending </span><span class="navbar_items">categories</span>
+        </nav>
     </header>
-    <main>
-        <div class="main_image_container">
-            <picture>
-                <source media="(max-width: 465px)" srcset="/assets/images/image-web-3-mobile.jpg">
-                <img src="/assets/images/image-web-3-desktop.jpg" alt="web3" class="main_image">
-            </picture>
-        </div>
+    <main class="main_container">
         <div class="heading">
-            <h1 class="heading_content">The Bright Future of Web 3.0?</h1>
-        </div>
-        <div class="news_header">
-            <div class="header_content_container">
-                <p class="header_content">We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
+            <div class="heading_image_container">
+                <picture>
+                    <source media="(max-width: 769px)" srcset="/assets/images/image-web-3-mobile.jpg">
+                    <img src="/assets/images/image-web-3-desktop.jpg" alt="web3" class="main_image">
+                </picture>
             </div>
-            <div class="button_container">
-                <button type="button">Read More</button>
+            <div class="content_container">
+                <div class="left">
+                    <p class="heading_text">The Bright Future of Web3.0?</p>
+                </div>
+                <div class="right">
+                    <div class="heading_content_container">
+                        <p class="heading_content">We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
+                    </div>
+                    <div class="button_container">
+                        <button type="button" class="button">Read More</button>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="news_column">
@@ -49,37 +54,39 @@
             <p class="column_title">Is VS Funding Drying Up?</p>
             <p class="column_content">Private funding by VC firms is down 50% YOY.We take a look at what that means.</p>
         </div>
-        <div class="article1 article_box">
-            <div class="left">
+    </main>
+    <section class="article_container">
+        <div class="article_box">
+            <div class="article_image_container">
                 <img src="/assets/images/image-retro-pcs.jpg" class="article_image" alt="">
             </div>
-            <div class="right">
+            <div class="article_content_container">
                 <p class="number">01</p>
                 <p class="article_heading">Reviving Retro PCs</p>
                 <p class="article_content">What happens when old PCs are given modern upgrades?</p>
             </div>
         </div>
-        <div class="article2 article_box">
-            <div class="left">
+        <div class="article_box article2">
+            <div class="article_image_container">
                 <img src="/assets/images/image-top-laptops.jpg" class="article_image" alt="">
             </div>
-            <div class="right">
+            <div class="article_content_container">
                 <p class="number">02</p>
                 <p class="article_heading">The 10 Laptops of 2022</p>
                 <p class="article_content">Our best picks for various needs and budgets</p>
             </div>
         </div>
-        <div class="article3 article_box">
-            <div class="left">
+        <div class="article_box article3">
+            <div class="article_image_container">
                 <img src="/assets/images/image-gaming-growth.jpg" class="article_image" alt="">
             </div>
-            <div class="right">
+            <div class="article_content_container article3">
                 <p class="number">03</p>
                 <p class="article_heading">The Growth of Gaming</p>
                 <p class="article_content">How the pandemic has sparked fresh opportunities.</p>
             </div>
         </div>
-    </main>
+    </section>
 </body>
 
 </html>
